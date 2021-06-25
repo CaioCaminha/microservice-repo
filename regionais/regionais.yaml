@@ -1,13 +1,12 @@
 spring:
   database:
-    driverClassName: org.postgresql.Driver
+    driverClassName: org.h2.Driver
   datasource: 
-    password: caminha123
-    platform: postgres
-    url: jdbc:postgresql://localhost:5432/regionais
-    username: caiocaminha
+    password: password
+    url: jdbc:h2:mem:regionais
+    username: sa
   jpa:
-    database: POSTGRESQL
+    database-platform: org.hibernate.dialect.H2Dialect
     hibernate:
       ddl-auto: update
     properties:
